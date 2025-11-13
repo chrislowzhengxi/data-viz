@@ -1,0 +1,224 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{float}
+
+\title{DATA 227 Exercise 7 Chris Low}
+\author{Chris Low}
+
+\begin{document}
+
+\maketitle
+
+\section*{Deceptive Version}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Screenshot 2025-11-13 at 2.17.43 PM.png}
+    \caption{Original Dog Weight and Neck Size Chart}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsection*{Design Choice 1: Unequal proportional ranges on the dual y-axes}
+
+\textbf{Contribution to the takeaway:}  
+The chart makes the two series appear almost perfectly aligned. The viewer sees two lines that move together at the same pace, even though their percentage changes differ.
+\vspace{3mm}
+
+\noindent \textbf{Whether it is deceptive:}  
+\textbf{Yes.} The left axis drops from 21 to 18, which is a \textit{fourteen percent decrease}. The right axis drops from 45 to 42, which is a \textit{seven percent decrease}. The visual slopes do not match the real relationship. \textbf{This presents a stronger correlation than what the data supports.}
+
+\newpage
+\noindent \textbf{Reasonable alternative:}  
+Use proportional axes so that similar slopes represent similar percentage changes.
+\vspace{3mm}
+
+
+\noindent \textbf{Why the designer might have done this:}  
+The designer may have wanted the lines to overlap cleanly. They may have focused on keeping the plot simple and did not consider how the differing proportional ranges affect comparison.
+
+
+\subsection*{Design Choice 2: Matching numerical ranges rather than proportional ranges}
+
+\noindent \textbf{Contribution to the takeaway:}  
+Equal “three-unit” drops on both axes make the series look directly comparable. This encourages the viewer to assume that the two measurements fall at the same rate.
+
+\vspace{3mm}
+
+\noindent \textbf{Whether it is deceptive:}  
+Yes. Equal unit changes do not imply equal relative changes. The chart hides this difference and smooths out variation between the two series.
+
+\vspace{3mm}
+
+\noindent \textbf{Reasonable alternative:}  
+Adjust both scales based on percentage change, not raw units.
+
+\vspace{3mm}
+
+\noindent \textbf{Why the designer might have done this:}  
+Using the same numerical span may have seemed intuitive. It makes the axes look balanced, even though the underlying data do not vary in the same way.
+
+
+\subsection*{Design Choice 3: Overlapping placement of the two lines}
+
+\noindent \textbf{Contribution to the takeaway:}  
+Placing the lines close together strengthens the impression that they behave similarly. The chart guides the eye toward their shared downward trend.
+
+\vspace{3mm}
+
+
+\noindent \textbf{Whether it is deceptive:}  
+Yes. Once the axes are misaligned, this placement exaggerates the similarity. It hides the fact that weight changes more sharply than neck size.
+
+
+\vspace{3mm}
+
+
+\noindent \textbf{Reasonable alternative:}  
+Give the lines slightly more vertical separation or use an inset to compare the trends more honestly.
+
+\vspace{3mm}
+
+\noindent \textbf{Why the designer might have done this:}  
+They may have wanted a clean two-series presentation. Overlapping lines create a neat visual, even if it masks differences in the data.
+
+
+\subsection*{Design Choice 4: Use of a subtle axis break symbol}
+
+\noindent \textbf{Contribution to the takeaway:}  
+The original chart includes a small axis break symbol at the base of the y-axis. It signals that the axis does not start at zero, but it is easy to miss. Because it is so subtle, most viewers read the chart as if the axis were continuous. This makes the downward trend look smoother and more synchronized than it actually is.
+
+\vspace{3mm}
+
+\noindent \textbf{Whether it is deceptive:}  
+Yes. The symbol is technically a disclosure, but the design minimizes its impact. Many readers will not notice it, and those who do may not understand how much scale compression it represents. This helps preserve the false impression that the two measurements move together almost perfectly.
+
+\vspace{3mm}
+
+\noindent \textbf{Reasonable alternative:}  
+Use a more explicit axis break. For example, a larger visual gap, a thicker zig-zag, or a clear annotation stating that the axis does not start at zero. Another option is to avoid the axis break entirely and begin the y-axis at zero.
+
+\vspace{3mm}
+
+\noindent \textbf{Why the designer might have done this:}  
+A small break keeps the chart visually neat. A larger or clearer break might draw attention to the mismatch between the two scales and make the alignment of the lines look less convincing. The designer may have preferred a clean appearance over a more transparent representation of the data.
+
+
+
+\section*{Benign and Persuasive}
+\begin{figure} [H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Screenshot 2025-11-13 at 2.17.50 PM.png}
+    \caption{Revised Dog Weight and Neck Size Chart}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsection*{Design Choice 1: Proportional scaling of both y-axes}
+
+\noindent \textbf{Contribution to the takeaway:}  
+The viewer can see that weight decreases more quickly than neck size. The slopes reflect the actual proportional differences.
+
+\noindent \textbf{Whether it is deceptive:}  
+No. The scaling makes comparison more accurate. It does not distort the trends.
+
+\noindent \textbf{Reasonable alternative:}  
+Normalize both variables on a single axis, though that would remove the dual-scale format.
+
+\noindent \textbf{Why the designer might have done this:}  
+They likely wanted to keep the dual-axis structure while correcting the misleading impression in the original chart.
+
+
+\subsection*{Design Choice 2: Axis labels placed near the respective lines}
+
+\noindent \textbf{Contribution to the takeaway:}  
+The reader can identify each line quickly without scanning across the figure. This keeps attention on the trends rather than on the axes.
+
+\noindent \textbf{Whether it is deceptive:}  
+No. It improves clarity without altering how the data appear.
+
+\noindent \textbf{Reasonable alternative:}  
+Use color-coded labels directly next to the lines.
+
+\noindent \textbf{Why the designer might have done this:}  
+This choice reduces clutter and keeps the chart consistent with the original visual style.
+
+
+\subsection*{Design Choice 3: Increased visual separation between the two trends}
+
+\noindent \textbf{Contribution to the takeaway:}  
+The viewer can see that the two measurements do not fall at the same rate. The chart reveals differences that were obscured before.
+
+\noindent \textbf{Whether it is deceptive:}  
+No. The separation reflects the actual data and helps prevent misinterpretation.
+
+\noindent \textbf{Reasonable alternative:}  
+Use small multiples to show each trend individually.
+
+\noindent \textbf{Why the designer might have done this:}  
+They likely wanted to retain comparability while avoiding the artificial similarity produced by the earlier design.
+
+
+\section*{Summary}
+
+The original chart is more deceptive because it uses axis scaling and line placement that make two different trends look nearly identical. The unequal proportional ranges hide the fact that weight changes more than neck size. Matching the numerical ranges strengthens this false similarity. The overlapping placement of the lines further exaggerates the impression that the two series move together.
+
+The revised chart avoids these problems. It adjusts the axis ranges so that slopes correspond to proportional changes. It also improves labeling and spacing so the viewer can focus on real differences. The redesigned version still presents both variables in a single figure, but it does so in a way that supports accurate interpretation. For these reasons, the original chart is clearly more deceptive, while the revised chart is persuasive without distorting the underlying data.
+
+
+
+
+\section*{Additional Visualization: Pension Spending vs. Population Aged 65+}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Screenshot 2025-11-13 at 2.43.24 PM.png}
+    \caption{Brazil's Pension Spending vs. Population Aged 65+}
+    \label{fig:placeholder}
+\end{figure}
+
+
+
+I saw this chart for colors and wanted to make remark on this. The left is the deceptive chart and the right is the persuasive/non-deceptive chart.
+
+
+\subsection*{Design Choice 1: Use of multiple colours to label selected countries}
+
+\noindent \textbf{Contribution to the takeaway:}  
+In the original chart, the visualiser used electric blue for labelled countries and dark blue for unlabelled ones. This creates the impression that the two colours represent two distinct categories. A viewer may think the electric blue points share some meaningful grouping, such as a regional or economic classification.
+
+\vspace{3mm}
+
+\noindent \textbf{Whether it is deceptive:}  
+Yes. The colours imply a categorical difference that does not exist. The only reason those points are electric blue is that they were chosen to be labelled. The design unintentionally suggests structure where there is none.
+
+\vspace{3mm}
+
+\noindent \textbf{Reasonable alternative:}  
+Use a single colour for all points. To highlight specific countries, adjust opacity or rely on typography instead of hue. This avoids implying false categories (like the "better" chart on the right.)
+
+\vspace{3mm}
+
+\noindent \textbf{Why the designer might have done this:}  
+The designer may have wanted labelled countries to stand out quickly and chose colour as the easiest way to do that. They may not have considered that viewers interpret colour as a categorical signal rather than a stylistic one.
+
+\subsection*{Design Choice 2: Heavy reliance on colour instead of text emphasis}
+
+\noindent \textbf{Contribution to the takeaway:}  
+Because colour carries most of the emphasis, it competes with the actual message. Countries like Brazil and the OECD average should be the focus, but the colour scheme spreads attention across all electric blue points.
+
+\vspace{3mm}
+
+\noindent \textbf{Whether it is deceptive:}  
+Not intentionally, but it still misleads. It suggests the electric blue group is important as a set when only Brazil and the OECD average are meant to stand out.
+
+\vspace{3mm}
+
+\noindent \textbf{Reasonable alternative:}  
+Use bold text for Brazil and italics for the OECD average, with all points kept in the same colour. Opacity can help reduce visual noise.
+
+\vspace{3mm}
+
+\noindent \textbf{Why the designer might have done this:}  
+Colour is an easy tool for emphasis. It simplifies the labeling process and keeps the chart visually compact, even if it unintentionally adds a false grouping.
+
+
+
+\end{document}

@@ -1,0 +1,107 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{float}
+
+\title{DATA 227 Chris Low Exercise 3}
+\author{Chris Low}
+\date{October 2025}
+
+\begin{document}
+
+\maketitle
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{image1.png}
+    \label{fig:placeholder}
+\end{figure}
+
+\noindent \textbf{I like:} I like that the x-axis uses a logarithmic scale. Since MIC values can span several orders of magnitude, using a log scale makes it possible to display both very small and very large values in a way that’s easy to compare. If it were a linear scale, most of the smaller values would be squished to one side, making the differences between antibiotics hard to see. The log scale makes those differences much clearer.
+
+\medskip
+\noindent \textbf{I wish:} I wish the x-axis tick labels were more readable and made it clearer which direction represented higher concentrations. Because the labels are so close together, it’s a little confusing to figure out which bar is the largest or smallest at first glance. This is especially tricky since the values grow exponentially, and it’s not immediately obvious where the biggest jump happens. A clearer scale or better spacing would help a lot.
+
+\medskip
+\noindent \textbf{What if:} What if there were subtle gridlines or reference markers added along the log scale? This would give viewers clear visual anchors to line up the ends of the bars and make comparisons between antibiotics faster and easier. It would also help highlight how big the gaps are between values, which can sometimes be hard to judge just by looking at the bars themselves.
+
+
+
+
+\newpage
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{image2.png}
+    \label{fig:placeholder}
+\end{figure}
+
+
+\noindent \textbf{I like:} I like that the chart uses boxplots to show the spread of MIC values for each antibiotic. This makes it easy to see not just the average level but also the variation between Gram-positive and Gram-negative bacteria. The inclusion of individual data points on top of the boxplots also helps me get a quick sense of how the values are distributed, which adds a lot of clarity.
+
+\medskip
+\noindent \textbf{I wish:} I wish the axis labels or tick marks gave a bit more context about what the log values correspond to in actual MIC concentrations. Right now, the numbers might not be intuitive for someone less familiar with the data. For example, it took me a moment to realize that a value of 2 corresponds to roughly \( 10^2 \). A clearer label or note would make interpretation much faster.
+
+\medskip
+\noindent \textbf{What if:} What if the median or mean MIC values were labeled directly on the boxplots? This would make it easier to read the chart without having to estimate values from the axis, especially since the log scale might not be immediately intuitive for everyone.
+
+\newpage
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{image3.png}
+    \label{fig:placeholder}
+\end{figure}
+
+
+\noindent \textbf{I like:} I like that the heatmap uses color to highlight differences in MIC values. The gradient makes it easy to spot where the values are high or low without having to read every single number. I also like how the Gram-positive and Gram-negative bacteria are labeled in different colors. This simple design choice makes it much easier to scan across the rows and quickly recognize which group each bacterium belongs to. The combination of color encoding for both value and category gives the chart a clean, layered structure that’s easy to follow.
+
+\medskip
+\noindent \textbf{I wish:} I wish the color scale was explained more clearly. While there is a scale on the right, it took me a moment to understand exactly how the colors map to MIC values, and the “Percent of Maximum MIC Needed” label could use a bit more context. I also wish the labels for the bacteria were a little larger or spaced out more. Right now, they feel cramped, which makes it harder to read the names quickly and smoothly.
+
+\medskip
+\noindent \textbf{What if:} What if the bacteria were sorted by their overall MIC level or effectiveness across antibiotics? This might make patterns stand out more clearly than the current unsorted order, where similar values are scattered throughout the chart. What if subtle horizontal shading or background bands were added behind the Gram-positive and Gram-negative groups? That could make the grouping even more visible and guide the viewer’s eye to major trends without adding extra visual clutter.
+
+
+\newpage
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\linewidth]{image4.png}
+    \label{fig:placeholder}
+\end{figure}
+
+\noindent \textbf{I like:} I like that the chart uses dots instead of bars, which keeps the display clean and easy to scan. The sparse ink helps the outliers pop right away. The different colors for each antibiotic also cue that multiple groups are being compared; even without a legend, it is fairly clear that colors map to drug types.
+
+\medskip
+\noindent \textbf{I wish:} I wish the x\mbox{-}axis scale were adjusted or transformed. Because a few very large values push the scale far to the right, most of the smaller MIC values are compressed near zero, which makes fine comparisons difficult. I also notice overlapping points in that crowded region, so it is hard to tell when multiple observations share the same position.
+
+\medskip
+\noindent \textbf{What if:} What if the x\mbox{-}axis used a logarithmic scale to spread out the smaller values and reduce crowding near zero? What if slight jitter or small horizontal offsets were added where points overlap, so viewers can see when multiple observations occur at the same value?
+
+
+
+\newpage 
+
+\begin{figure} [H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{image5.png}
+    \label{fig:placeholder}
+\end{figure}
+
+
+\noindent \textbf{I like:} I like that the chart uses stacked bars, which makes it easy to see how the values for different antibiotics add up for each bacterium. It gives a sense of both the total and how each antibiotic contributes to that total. The color encoding also works well here, since it clearly separates the three antibiotics and allows for quick visual comparison between them across bacteria.
+
+\medskip
+\noindent \textbf{I wish:} I wish the right panel didn’t feel so dominated by Penicillin (orange). It made me think at first that the chart might be sorted by Penicillin values, but it’s actually split by Gram-positive and Gram-negative groups. It’s also a bit confusing to figure out what the “Property Amount” on the y-axis refers to, and on the left chart it’s hard to see which antibiotic contributes what — most of the area is blue, while the right is almost entirely orange. It takes some effort to interpret that it actually splits by positive/negative.
+
+\medskip
+\noindent \textbf{What if:} What if both panels were plotted on the same scale or annotated to highlight how much larger the values are for Gram-negative bacteria? That would make the difference between the two groups a lot clearer. What if the bacteria were sorted by total value or arranged differently, maybe even using a log scale, so the patterns would be easier to spot instead of being hidden in the current order?
+
+
+
+
+
+\end{document}
+
