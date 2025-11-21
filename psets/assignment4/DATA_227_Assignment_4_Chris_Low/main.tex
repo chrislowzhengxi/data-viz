@@ -1,0 +1,158 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{float}
+
+\title{DATA 227 Assignment 4 Chris Low}
+\author{Chris Low}
+
+\begin{document}
+
+\maketitle
+
+
+\section*{Visualization 1: Heatmap Supporting the Proposition}
+
+
+\begin{figure} [H]
+    \centering
+    \includegraphics[width=1\linewidth]{clear_heatmap.png}
+    \caption{Heatmap showing abuse of authority complaints surging in recent years.}
+    \label{fig:placeholder}
+\end{figure}
+
+
+
+\textbf{Proposition supported:} Abuse of Authority complaints have surged in recent years. (relative to other categories). 
+
+\subsection*{Design Decisions}
+
+\textbf{Design Decision 1: Dropping 2019 and 2020} \\
+\textbf{Score:} -1 (slightly deceptive) \\
+I removed 2019 and 2020 from the heatmap. These years contain incomplete data and appear unusually low. Dropping them removes a dip at the end of the series. It makes the upward trend look smoother and more consistent. I considered keeping all years for transparency. I selected this choice because the incomplete data weakened the visual argument. The trimmed timeline makes the increase in Abuse of Authority look more stable and pronounced.
+
+\medskip
+
+\textbf{Design Decision 2: Restricting the timeline to begin at 2005} \\
+\textbf{Score:} -1 (slightly deceptive) \\
+I started the chart at 2005 instead of using the full period that appears in the dataset. Early years often have lower complaint counts, which would flatten the overall rise. Limiting the window creates a more continuous increase from medium values to high values. I could have shown the full timeline. I chose this range because it strengthens the sense of acceleration in complaints.
+
+\medskip
+
+\textbf{Design Decision 3: Changing the color scale to increase contrast} \\
+\textbf{Score:} 0 to -1 (borderline) \\
+I used a strong red sequential scale with a narrower domain. This sharpens the contrast between early years and later years. It makes the most recent cells appear much darker. A gentler palette would produce a softer gradient. The stronger contrast highlights the size of Abuse of Authority counts. It also makes the surge appear more dramatic.
+
+\medskip
+
+\textbf{Design Decision 4: Filtering out the Force category} \\
+\textbf{Score:} -1 (slightly deceptive) \\
+I removed the Force category from the chart. Force has lower counts than Abuse of Authority. Removing it prevents visual competition and allows Abuse of Authority to dominate the figure. Including Force would reduce the salience of Abuse of Authority. I kept only Discourtesy and Offensive Language to make Abuse of Authority look especially large and concerning.
+
+\medskip
+
+\textbf{Design Decision 5: Placing Abuse of Authority at the top of the y-axis} \\
+\textbf{Score:} +1 (slightly earnest) \\
+I placed Abuse of Authority as the first row. This draws the viewer's eye to the darkest portion of the heatmap. Alphabetical order would be more neutral. I chose this ordering to foreground the category that supports the proposition.
+
+
+\bigskip
+\textbf{Summary interpretation.}
+
+\noindent
+In this heatmap, I made several design decisions that help present Abuse of Authority as a rising and concerning category. I removed the years 2019 and 2020 because they contain incomplete data, and this also removes a visible decline at the end of the series that would weaken the upward pattern. I restricted the timeline to start at 2005 so the chart begins at a moderate level instead of including earlier years that would flatten the long-term trend. I adjusted the color scale to increase contrast, which makes the darkest values in later years stand out more clearly. I filtered out the Force category and kept only Discourtesy and Offensive Language as comparisons. These categories have lower counts and remain visually flat, which strengthens the impression that Abuse of Authority is unusually large and rising. I placed Abuse of Authority as the first row to draw the viewer's eye to the category that supports the proposition. I considered using the full set of categories and the full timeline, but these alternatives produced a more mixed pattern. I selected the final set of decisions because they focus attention on a clear and persuasive rise in Abuse of Authority complaints.
+
+
+
+
+\section*{Visualization 1.5: Line Chart as a Complement}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{supplement_line.png}
+    \caption{Line chart showing the same pattern as the heatmap.}
+    \label{fig:placeholder}
+\end{figure}
+\textbf{Note.} \textit{This line chart is not the visualization that argues the proposition is false. I created a separate graph (Please scroll down below) that challenges the claim. The line chart only complements the first heatmap and shows the same trend in a different format.}
+
+\subsection*{Design Decisions}
+
+\textbf{Design Decision 1: Trimming the timeline to end at 2015} \\
+\textbf{Score:} -1 (slightly deceptive) \\
+I removed data after 2015. This avoids the drop that occurs from incomplete years and makes the rise appear cleaner. A full timeline would show more variation. I selected this subset to keep the upward slope more consistent.
+
+\medskip
+
+\textbf{Design Decision 2: Highlighting Abuse of Authority with stronger color and thickness} \\
+\textbf{Score:} 0 (neutral rhetorical choice) \\
+I used a thicker and darker line for Abuse of Authority. The comparison categories use lighter and thinner lines. This directs attention to the category that shows the strongest rise. The alternative would be equal formatting for all lines. That would reduce emphasis. The chosen style increases visual focus on the trend.
+
+\medskip
+
+\textbf{Design Decision 3: Using comparison categories with small scales} \\
+\textbf{Score:} -1 (slightly deceptive) \\
+I included Discourtesy and Offensive Language as the comparison groups. These categories remain low and stable. This makes the Abuse of Authority line look especially large and concerning. Including Force as a comparison would reduce the contrast. I selected the smaller categories to increase the visual difference between groups.
+
+\medskip
+
+\textbf{Design Decision 4: Keeping a relatively tall y-axis range} \\
+\textbf{Score:} +1 (slightly earnest) \\
+I kept the y-axis untruncated. This avoids artificial steepening of the slope. The line still trends upward and supports the narrative. A truncated axis would have created a sharper slope. I kept a conservative axis range to avoid excessive distortion.
+
+\subsection*{Short Interpretation}
+
+The line chart shows that Abuse of Authority complaints rise steadily between 2005 and 2015. Discourtesy and Offensive Language stay low and grow more slowly. This reinforces the same conclusion as the heatmap. It provides another view of the trend before comparing it to the separate visualization that challenges the proposition.
+
+
+
+
+\section*{Visualization 2: Line Chart Showing Stable Proportions (Opposes the Proposition)}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{opposite.png}
+    \caption{Line chart showing the opposite conclusion: Abuse of Authority complaints (as well as all other complaints) have remained stable in recent years.}
+    \label{fig:placeholder}
+\end{figure}
+
+
+\textbf{Note.} This line chart \textbf{supports the opposite conclusion} from the first (and the first line chart) visualization. It uses proportions instead of raw counts. This makes the complaint categories appear stable over time. It is designed to contrast with the earlier heatmap that supports the proposition.
+
+\subsection*{Design Decisions}
+
+\textbf{Design Decision 1: Truncating the timeline to begin at 2005} \\
+\textbf{Score:} -1 (slightly deceptive) \\
+I removed the early years that appear in the dataset and began the chart at 2005. The first few years have stronger fluctuations in proportions and would make the series look less stable. Starting the timeline later creates smoother patterns and makes each category appear more consistent. I considered using the full range, but these earlier values would weaken the claim that the proportions do not change much.
+
+\medskip
+
+\textbf{Design Decision 2: Smoothing the lines with a moving average} \\
+\textbf{Score:} -1 (slightly deceptive) \\
+I applied a simple smoothing transformation to the proportions. This reduces year-to-year noise and removes small spikes. A chart without smoothing would show sharper jumps that might distract from the stable pattern. I considered leaving the lines unsmoothed. I selected smoothing because it helps present the complaint categories as steady and predictable over time.
+
+\medskip
+
+\textbf{Design Decision 3: Keeping the full y-axis scale} \\
+\textbf{Score:} +1 (slightly earnest) \\
+I kept the full proportional range on the y-axis rather than compressing the domain. A compressed y-axis would have made small variations appear even flatter. I chose the more conservative scale because it keeps the proportions accurate and supports a stable visual pattern without creating misleading compression.
+
+\medskip
+
+\textbf{Design Decision 4: Using equal line thickness and point size} \\
+\textbf{Score:} 0 (neutral rhetorical choice) \\
+I used a uniform line style for all categories. Equal formatting helps present the categories as comparable units. A more dramatic alternative would have been to fade or thin some of the less important lines, which would shift focus toward one category. I kept equal formatting to keep attention on the stability of the overall proportions.
+
+
+\textbf{Design Decision 5: Keeping the color scale relatively neutral} \\
+\textbf{Score:} +2  \\
+I kept the color scales neutral: that is, there are no direct contrast in color. All the colors are neither too bright nor too dark, so it did not draw unnecessary attention to any particular misconduct category.
+
+\subsection*{Short Interpretation}
+
+In the proportion line chart, I made several design decisions that help present the complaint categories as stable over time. I began the timeline at 2005 instead of using the full period because the earliest years show stronger fluctuations that would weaken the impression of stability. Starting later produces a smoother pattern. I also applied a simple smoothing transformation, which reduces sharp year-to-year movements and makes the trends look more consistent. Unsmooth lines were possible, but they introduced noise that distracted from the overall pattern. I kept the full proportional range on the y-axis rather than compressing it. A compressed range would flatten the lines too aggressively, while the chosen scale still supports a stable visual impression without being extreme. Finally, I used equal line thickness for all categories. A more dramatic alternative would have been to mute or lighten some lines, but equal formatting keeps attention on the general consistency across categories. Together, these decisions help reinforce the idea that the proportional mix of complaint types does not change much over time.
+
+
+\section*{Final Reflection Paragraph}
+This assignment showed me how easily design choices can change the story a visualization tells. Some parts of the process were straightforward, such as computing proportions and preparing the datasets. \textbf{Other steps were more difficult, especially deciding how to adjust scales, timelines, and category selections in ways that looked reasonable but still shaped the viewer's interpretation.} I was surprised by how small changes, such as shifting the start year or narrowing a color scale, could produce different emotional reactions while still using correct data. Working through both sides of the proposition made the ethical questions feel more concrete. It is clear that persuasive choices often overlap with misleading ones, and the boundary between them can be thin. I think acceptable persuasion is possible when the choices do not hide important context or contradict the data, and when the viewer could still reach their own interpretation. Choices become misleading when they remove key information, distort magnitude, or create patterns that would not appear under a more neutral presentation. This assignment made me more aware of how much responsibility designers have when shaping visual narratives and how easily viewers can be influenced by decisions that appear technical on the surface.
+
+
+\end{document}
